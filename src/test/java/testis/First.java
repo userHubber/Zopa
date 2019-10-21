@@ -25,6 +25,7 @@ public class First {
     public void setUpClass() throws Exception {
         System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 
     @Test
