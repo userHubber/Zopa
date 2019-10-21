@@ -19,16 +19,12 @@ public class First {
         System.out.println("---------------------Hay i am test------------------------");
     }
 
-//    @BeforeClass
-//    public void setUpClass() throws Exception {
-//
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\i.belyaev\\Desktop\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//    }
     @BeforeClass
     public void setUpClass() throws Exception {
 
-        System.out.println("++++++++++++++++++++++_______+++++++++++++++++=======");
+        System.out.println("start drova");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\i.belyaev\\Desktop\\chromedriver.exe");
+        driver = new ChromeDriver();
     }
 
     @Test
@@ -38,8 +34,10 @@ public class First {
 
     @AfterClass
     public void tearDownClass() throws Exception {
-//        driver.close();
-//        driver.quit();
+        if (driver != null) {
+            driver.close();
+            driver.quit();
+        }
     }
 
 }
