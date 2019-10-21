@@ -29,7 +29,7 @@ public class First {
 
     @Test
     public void test() throws Exception {
-        System.out.println("testttttttttttttttt");
+        driver.get("https://mail.ru/");
     }
 
     @AfterClass
