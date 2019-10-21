@@ -19,16 +19,21 @@ public class First {
         System.out.println("---------------------Hay i am test------------------------");
     }
 
+//    @BeforeClass
+//    public void setUpClass() throws Exception {
+//
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\i.belyaev\\Desktop\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//    }
     @BeforeClass
     public void setUpClass() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\i.belyaev\\Desktop\\chromedriver.exe");
-        driver = new ChromeDriver();
+        System.out.println("++++++++++++++++++++++_______+++++++++++++++++=======");
     }
 
     @Test
     public void test() throws Exception {
-        driver.get("https://mail.ru/");
+        System.out.println("testttttttttttttttt");
     }
 
     @AfterClass
