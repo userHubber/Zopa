@@ -31,7 +31,10 @@ public class First {
     public void test() throws Exception {
         driver.get("https://mail.ru/");
         WebElement webelement = driver.findElement(By.xpath("//*[text()='Mail.ru']"));
-        System.out.println(webelement.getAttribute("rel"));
+        for (int i = 0; i < 20; i++) {
+
+            System.out.println(webelement.getAttribute("rel"));
+        }
 
     }
 
@@ -39,8 +42,8 @@ public class First {
     public void tearDownClass() throws Exception {
         if (driver != null) {
             System.out.println("не закрыт");
-//            driver.close();
-//            driver.quit();
+            driver.close();
+            driver.quit();
         }
     }
 
