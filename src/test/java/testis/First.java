@@ -38,8 +38,8 @@ public class First {
 
     @AfterClass
     public void tearDownClass() throws Exception {
-        driver.close();
-        driver.quit();
+//        driver.close();
+//        driver.quit();
     }
 
 }

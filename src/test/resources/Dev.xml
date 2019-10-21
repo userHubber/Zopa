@@ -4,7 +4,7 @@
     
     <test name="Registration_Login">
         <classes>
-            <class name="testis\First"/>
+            <class name="testis.First"/>
         </classes>
     </test>
     
