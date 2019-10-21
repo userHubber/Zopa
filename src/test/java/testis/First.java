@@ -38,8 +38,9 @@ public class First {
     @AfterClass
     public void tearDownClass() throws Exception {
         if (driver != null) {
-            driver.close();
-            driver.quit();
+            System.out.println("не закрыт");
+//            driver.close();
+//            driver.quit();
         }
     }
 
