@@ -16,7 +16,7 @@ public class First {
 
     @BeforeTest
     public void setUpTest() throws Exception {
-        System.out.println("Hay i am test");
+        System.out.println("---------------------Hay i am test------------------------");
     }
 
     @BeforeClass
