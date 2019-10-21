@@ -23,7 +23,7 @@ public class First {
 
     @BeforeClass
     public void setUpClass() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\i.belyaev\\Desktop\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
