@@ -31,7 +31,7 @@ public class First {
     public void test() throws Exception {
         driver.get("https://mail.ru/");
         WebElement webelement = driver.findElement(By.xpath("//*[text()='Mail.ru']"));
-        System.out.println(webelement.getText());
+        System.out.println(webelement.getAttribute("rel"));
 
     }
 
