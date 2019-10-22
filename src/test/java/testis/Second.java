@@ -1,24 +1,22 @@
 package testis;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class First {
-
-    private WebDriver driver;
-
-    public First() {
+public class Second {
+     private WebDriver driver;
+    public Second() {
     }
 
     @BeforeTest
     public void setUpTest() throws Exception {
-        System.out.println("---------------------Hay i am test dev------------------------");
+        System.out.println("---------------------Hay i am test prud------------------------");
     }
 
     @BeforeClass
@@ -34,7 +32,7 @@ public class First {
         WebElement webelement = driver.findElement(By.xpath("//*[text()='Mail.ru']"));
         for (int i = 0; i < 20; i++) {
 
-            System.out.println(webelement.getAttribute("dev"));
+            System.out.println(webelement.getAttribute("prud"));
         }
 
     }
@@ -47,5 +45,4 @@ public class First {
             driver.quit();
         }
     }
-
 }

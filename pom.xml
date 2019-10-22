@@ -56,7 +56,7 @@
                 
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src\test\resources\Dev.xml</suiteXmlFile>
+                                <suiteXmlFile>src\test\resources\Prud.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration> 
                 
