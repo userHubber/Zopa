@@ -21,31 +21,36 @@ public class First {
         System.out.println("---------------------Hay i am test------------------------");
     }
 
-    @BeforeClass
-    public void setUpClass() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
+//    @BeforeClass
+//    public void setUpClass() throws Exception {
+//        System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//    }
 
+//    @Test
+//    public void test() throws Exception {
+//        driver.get("https://mail.ru/");
+//        WebElement webelement = driver.findElement(By.xpath("//*[text()='Mail.ru']"));
+//        for (int i = 0; i < 20; i++) {
+//
+//            System.out.println(webelement.getAttribute("rel"));
+//        }
+//
+//    }
     @Test
     public void test() throws Exception {
-        driver.get("https://mail.ru/");
-        WebElement webelement = driver.findElement(By.xpath("//*[text()='Mail.ru']"));
-        for (int i = 0; i < 20; i++) {
-
-            System.out.println(webelement.getAttribute("rel"));
-        }
+        System.out.println("zopa");
 
     }
 
-    @AfterClass
-    public void tearDownClass() throws Exception {
-        if (driver != null) {
-            System.out.println("не закрыт");
-            driver.close();
-            driver.quit();
-        }
-    }
+//    @AfterClass
+//    public void tearDownClass() throws Exception {
+//        if (driver != null) {
+//            System.out.println("не закрыт");
+//            driver.close();
+//            driver.quit();
+//        }
+//    }
 
 }
